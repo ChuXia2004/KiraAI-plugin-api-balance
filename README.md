@@ -1,11 +1,12 @@
 # API余额查询插件
 
-查询 DeepSeek 和 SiliconFlow API 余额的 KiraAI 插件。
+查询 DeepSeek、SiliconFlow 和 Moonshot API 余额的 KiraAI 插件。
 
 ## 功能
 
 - 查询 DeepSeek 账户余额
 - 查询 SiliconFlow 账户余额
+- 查询 Moonshot 账户余额
 - 支持通过 LLM 工具调用触发
 - 支持关键词触发（可选）
 
@@ -17,6 +18,7 @@
 |--------|------|------|
 | `deepseek_api_key` | sensitive | DeepSeek API Key |
 | `siliconflow_api_key` | sensitive | SiliconFlow API Key |
+| `moonshot_api_key` | sensitive | Moonshot API Key |
 | `enable_keyword_trigger` | switch | 是否启用关键词触发 |
 
 ## 使用方法
@@ -25,6 +27,7 @@
 
 - "查询 DeepSeek 余额"
 - "看看 SiliconFlow 还有多少钱"
+- "帮我看看 Moonshot 余额"
 - "帮我查一下 API 余额"
 
 AI 会自动调用工具查询对应平台的余额。
